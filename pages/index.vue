@@ -1,7 +1,7 @@
 <template>
   <div class="col-12 d-flex align-items-center justify-content-center row p-0 m-0">
 
-    <div class="col-8 my-4">
+    <div class="col-4 my-4">
       <v-expansion-panels class="col-12" >
         <v-expansion-panel>
           <v-expansion-panel-title>
@@ -14,7 +14,7 @@
             </template>
           </v-expansion-panel-title>
           <v-expansion-panel-text>
-            <v-form @submit.prevent class="col-5">
+            <v-form @submit.prevent class="col-12">
               <v-text-field
                   label="Search Name or Family"
                   v-model="searchHero"
@@ -25,7 +25,7 @@
       </v-expansion-panels>
 
     </div>
-    <div class="col-1 my-4">
+    <div class="col-3 my-4">
       <v-dialog max-width="400">
         <template v-slot:activator="{ props: activatorProps }">
           <v-btn
@@ -76,7 +76,7 @@
         </template>
       </v-dialog>
     </div>
-    <div class="col-1 ">
+    <div class="col-3 ">
       <v-switch
           v-model="useMainStore().theme"
           :label="useMainStore().theme"
